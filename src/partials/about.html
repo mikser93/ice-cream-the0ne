@@ -1,0 +1,80 @@
+<section class="about section">
+  <div class="container">
+    <div class="about__name">
+      <div>
+        <span class="label-span about__label">tradition and love</span>
+        <h2 class="about__title">how it’s made?</h2>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="about__photo">
+        <picture>
+          <source
+            srcset="./images/about/cow.png 1x, ./images/about/cow_x2.png 2x"
+            media="(min-width:320px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow_tablet.png    1x,
+              ./images/about/cow_tablet_x2.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow_desktop.png    1x,
+              ./images/about/cow_desktop_x2.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <img
+            class="about__photo--cow"
+            src="./images/about/cow.png"
+            alt="cow with milk"
+            width="501"
+          />
+        </picture>
+      </div>
+      <div class="about__description">
+        <p class="about__description--first">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__description--second">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          <br />
+          <span class="about__description--span"
+            >Aliquam erat volutpat. Aenean accumsan.</span
+          >
+        </p>
+        <button class="about__button" type="button" data-modal-about-open>
+          Read more
+          <svg class="about__button--icon" width="10" height="10">
+            <use href="./images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop__about is-hidden" data-about-modal="">
+    <div class="modal__about">
+      <p class="modal__about--description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et
+        nesciunt explicabo inventore, nam corporis quod, eligendi nisi natus
+        veritatis necessitatibus similique harum ea voluptas cupiditate error,
+        <br />
+        <br />
+        Quisquam accusantium ex exercitationem odit molestias numquam?
+        Voluptatibus cumque repellat autem nobis a! Sunt dolorem, animi iure.
+      </p>
+      <button class="modal__about--close" type="button" data-modal-about-close>
+        <svg class="modal__about--close-icon" width="10" height="10">
+          <use href="./images/icons.svg#icon-close-about"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
