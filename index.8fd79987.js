@@ -1,0 +1,2 @@
+!function(){var o={openModalBtn:document.querySelector("[data-modal-contacts-open]"),closeModalBtn:document.querySelector("[data-modal-contacts-close]"),modal:document.querySelector("[data-contacts-modal]")};function t(){o.modal.classList.toggle("contacts-backdrop--hidden")}o.openModalBtn.addEventListener("click",t),o.closeModalBtn.addEventListener("click",t)}();
+//# sourceMappingURL=index.8fd79987.js.map
