@@ -1,0 +1,147 @@
+.advantages.section {
+  background-color: $background-color-secondary;
+  @media screen and (min-width: 768px) {
+    padding-top: 41px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 0px;
+  }
+}
+
+.advantages.container {
+  @media screen and (min-width: 1280px) {
+    padding-left: 35px;
+  }
+}
+
+.advantages__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.advantages__item {
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-right: 126px;
+    }
+  }
+}
+
+.advantages__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color-1;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.45;
+    text-transform: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    text-transform: none;
+  }
+
+  &.milk-bucket:before {
+    content: '';
+    display: block;
+    margin: 0 0 16px;
+    width: 33px;
+    height: 50px;
+    background-size: contain;
+    background-image: url('../images/advantages/icon-milk-bucket.png');
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin: 0 0 37px;
+    }
+  }
+
+  &.apple-bucket::before {
+    content: '';
+    display: block;
+    margin: 0 0 16px;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-image: url('../images/advantages/icon-apple-bucket.png');
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin: 0 0 37px;
+    }
+  }
+
+  &.candy::before {
+    content: '';
+    display: block;
+    margin: 0 0 16px;
+    width: 44px;
+    height: 50px;
+    background-size: contain;
+    background-image: url('../images/advantages/icon-candy.png');
+
+    @media screen and (min-width: 768px) {
+      margin: 0 0 30px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin: 0 0 37px;
+    }
+  }
+}
+
+.advantages__text {
+  text-align: start;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $text-color-4;
+  width: 210px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  &.last-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+    margin-top: 13px;
+    font-size: 16px;
+    width: 288px;
+  }
+}
+
+.invisible-title {
+  display: none;
+}

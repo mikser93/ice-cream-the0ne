@@ -1,0 +1,24 @@
+.gallery.section {
+    display: flex;
+    justify-content: center;
+
+
+
+    @media screen and (max-width: 1279px) {
+        background-image: linear-gradient(to bottom, $background-color-secondary 42%, $background-color-primary 42%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(to bottom, $background-color-secondary 42%, $background-color-primary 42%);
+    }
+
+    @media screen and (max-width: 767px) {
+        background-image: linear-gradient(to bottom, $background-color-secondary 43.5%, $background-color-primary 43.5%);
+    }
+}
+
+
+.gallery__img {
+    width: 100%;
+    max-width: 1280px;
+}

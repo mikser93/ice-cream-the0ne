@@ -1,0 +1,31 @@
+<section class="gallery section">
+  <picture>
+    <source
+      srcset="
+        ./images/gallery/gallery-desktop_1x.jpg 1x,
+        ./images/gallery/gallery-desktop_2x.jpg 2x
+      "
+      media=" (min-width:1280px)"
+    />
+    <source
+      srcset="
+        ./images/gallery/gallery-tablet_1x.jpg 1x,
+        ./images/gallery/gallery-tablet_2x.jpg 2x
+      "
+      media=" (min-width:321px)"
+    />
+    <source
+      srcset="
+        ./images/gallery/gallery-mobile_1x.jpg 1x,
+        ./images/gallery/gallery-mobile_2x.jpg 2x
+      "
+      media=" (max-width:320px)"
+    />
+    <img
+      src="./images/gallery/gallery-mobile_2x.jpg"
+      class="gallery__img"
+      alt="Gallery"
+      aria-label="Gallery"
+    />
+  </picture>
+</section>
